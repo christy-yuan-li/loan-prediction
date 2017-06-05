@@ -4,6 +4,7 @@ loan-default-prediction
 Description
 -----------
 The code was written for [Loan Default Prediction Competition at Kaggle](https://www.kaggle.com/c/loan-default-prediction) and got the prize. 
+The code is modified based on https://github.com/songgc/loan-default-prediction.git. 
 
 Dependencies and requirements
 -----------------------------
