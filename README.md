@@ -19,10 +19,25 @@ How to run
 4. Run `python train_predict_cv.py --data_dir './data' --train_filename 'train_v2.csv' --test_filaname 'test_v2.csv'`
 5. The prediction submission-ready csv (submission.csv) will be found at './data' 
 
+Example results on the dataset is as follows: 
+
+accuracy_score: 0.9892 
+auc: 0.5
+precision_score: 0.9371
+recall_score: 0.9450
+f1score: 0.9410 
+
 To validate the code using a small dataset
 ----------
 1. Run `bash requirement.sh` to install required dependencies 
 2. Run `bash run.sh` to train the model
 
+Using the small dataset, you will get results similar to following. 
+
+accuracy_score: 0.975467
+auc: 0.5
+precision_score: 0.86875
+recall_score: 0.86875
+f1_score: 0.86875
 
 
