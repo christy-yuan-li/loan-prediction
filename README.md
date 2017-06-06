@@ -19,7 +19,7 @@ How to run
 4. Run `python train_predict_cv.py --data_dir './data' --train_filename 'train_v2.csv' --test_filaname 'test_v2.csv'`
 5. The prediction submission-ready csv (submission.csv) will be found at './data' 
 
-To validate the code
+To validate the code using a small dataset
 ----------
 1. Run `bash requirement.sh` to install required dependencies 
 2. Run `bash run.sh` to train the model
