@@ -14,8 +14,10 @@ Dependencies and requirements
 How to run
 ----------
 1. Download data from [Kaggle](https://www.kaggle.com/c/loan-default-prediction)
-2. Unzip the train and test csv files to path/to/data/folder and make sure that their names are train_v2.csv and test_v2.csv, respectively
-3. Run `python train_predict_cv.py path/to/data/folder`
-4. The prediction submission-ready csv (submission.csv) will be found at path/to/data/folder
+2. Unzip the train and test csv files to './data' folder and make sure that their names are 'train_v2.csv' and 'test_v2.csv', respectively
+3. Run `python train_predict_cv.py --data_dir './data' --train_filename 'train_v2.csv' --test_filaname 'test_v2.csv'`
+4. The prediction submission-ready csv (submission.csv) will be found at './data' 
+
+
 
 
