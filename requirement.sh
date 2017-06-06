@@ -14,4 +14,7 @@ git clone https://github.com/petuum-inc/ml-storage.git
 mv ml-storage/*.zip ./
 unzip train.csv.zip
 unzip test_tiny.csv.zip
+rm train.csv.zip
+rm test_tiny.csv.zip
+rm -rf ml-storage
 cd ../
