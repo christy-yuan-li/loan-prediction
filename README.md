@@ -21,10 +21,10 @@ How to run
 
 Example results on the dataset is as follows: 
 
-accuracy_score: 0.9892 
-auc: 0.5
-precision_score: 0.9371
-recall_score: 0.9450
+accuracy_score: 0.9892, 
+auc: 0.5,
+precision_score: 0.9371,
+recall_score: 0.9450,
 f1score: 0.9410 
 
 To validate the code using a small dataset
@@ -34,10 +34,10 @@ To validate the code using a small dataset
 
 Using the small dataset, you will get results similar to following. 
 
-accuracy_score: 0.975467
-auc: 0.5
-precision_score: 0.86875
-recall_score: 0.86875
+accuracy_score: 0.975467,
+auc: 0.5,
+precision_score: 0.86875,
+recall_score: 0.86875,
 f1_score: 0.86875
 
 
