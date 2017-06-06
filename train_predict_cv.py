@@ -10,6 +10,13 @@ from sklearn.ensemble import GradientBoostingClassifier, GradientBoostingRegress
 import lightgbm as lgb
 import numpy as np
 from sklearn import metrics
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--train_filename', type=str, help='file path to the train dataset')
+parser.add_argument('--test_filename', type=str, help='file path to the test dataset')
+parser.add_argument('--data_dir', type=str, help='folder path of data')
+args = parser.parse_args()
 
 read_csv = partial(pd.read_csv, na_values=['NA', 'na'], low_memory=False)
 
@@ -139,8 +146,8 @@ def get_reg_pipeline():
 
 
 if __name__ == '__main__':
-    path = './data'
-    filenames = ['train_v2.csv', 'test_v2.csv']
+    path = args.data_dir
+    filenames = [args.train_filename, args.test_filaname]
     train_file, test_file = [os.path.join(path, fname) for fname in filenames]
     train_all = read_csv(train_file)
     msk = np.random.rand(len(train_all)) < 0.8
