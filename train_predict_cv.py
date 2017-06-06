@@ -147,7 +147,7 @@ def get_reg_pipeline():
 
 if __name__ == '__main__':
     path = args.data_dir
-    filenames = [args.train_filename, args.test_filaname]
+    filenames = [args.train_filename, args.test_filename]
     train_file, test_file = [os.path.join(path, fname) for fname in filenames]
     train_all = read_csv(train_file)
     msk = np.random.rand(len(train_all)) < 0.8
